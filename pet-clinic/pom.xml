@@ -46,7 +46,9 @@
     </build>
 
     <scm>
-        <developerConnection>scm:git:https://github.com/Konopl9/sfg-pet-clibic.git</developerConnection>
-  </scm>
+        <url>https://github.com/Konopl9/sfg-pet-clibic</url>
+        <connection>scm:git:ssh://git@github.com/Konopl9/sfg-pet-clibic.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/Konopl9/sfg-pet-clibic.git</developerConnection>
+    </scm>
 
 </project>
