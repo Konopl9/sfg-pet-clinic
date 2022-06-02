@@ -5,7 +5,7 @@
 
     <groupId>mishcma.springframework</groupId>
     <artifactId>pet-clinic</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.2</version>
 
     <modules>
         <module>pet-clinic-data</module>
@@ -49,6 +49,7 @@
         <url>https://github.com/Konopl9/sfg-pet-clibic</url>
         <connection>scm:git:ssh://git@github.com/Konopl9/sfg-pet-clibic.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/Konopl9/sfg-pet-clibic.git</developerConnection>
-    </scm>
+      <tag>pet-clinic-0.0.2</tag>
+  </scm>
 
 </project>
