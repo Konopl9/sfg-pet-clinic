@@ -1,11 +1,11 @@
 package mishcma.springframework.petclinic.services.map;
 
 import mishcma.springframework.petclinic.model.Owner;
-import mishcma.springframework.petclinic.services.CrudService;
+import mishcma.springframework.petclinic.services.OwnerService;
 
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
     public Set<Owner> findAll() {
@@ -32,4 +32,8 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
         return super.save(object.getId(), object);
     }
 
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
+    }
 }
