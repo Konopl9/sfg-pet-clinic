@@ -4,7 +4,9 @@ import mishcma.springframework.petclinic.model.Pet;
 import mishcma.springframework.petclinic.services.PertService;
 
 import java.util.Set;
+import org.springframework.stereotype.Service;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PertService {
 
     @Override

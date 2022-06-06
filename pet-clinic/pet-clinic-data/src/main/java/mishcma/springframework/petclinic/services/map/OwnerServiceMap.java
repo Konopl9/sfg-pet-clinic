@@ -4,7 +4,9 @@ import mishcma.springframework.petclinic.model.Owner;
 import mishcma.springframework.petclinic.services.OwnerService;
 
 import java.util.Set;
+import org.springframework.stereotype.Service;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
