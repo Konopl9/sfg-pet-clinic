@@ -1,13 +1,13 @@
 package mishcma.springframework.petclinic.services.map;
 
 import mishcma.springframework.petclinic.model.Pet;
-import mishcma.springframework.petclinic.services.PertService;
+import mishcma.springframework.petclinic.services.PetService;
 
 import java.util.Set;
 import org.springframework.stereotype.Service;
 
 @Service
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements PertService {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override
     public Set<Pet> findAll() {
