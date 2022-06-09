@@ -2,12 +2,12 @@ package mishcma.springframework.petclinic.services.map;
 
 import java.util.Set;
 import mishcma.springframework.petclinic.model.Speciality;
-import mishcma.springframework.petclinic.services.SpecialitiesService;
+import mishcma.springframework.petclinic.services.SpecialtyService;
 import org.springframework.stereotype.Service;
 
 @Service
 public class SpecialityMapService extends AbstractMapService<Speciality, Long> implements
-    SpecialitiesService {
+    SpecialtyService {
 
     @Override
     public Set<Speciality> findAll() {
