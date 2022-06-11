@@ -8,12 +8,12 @@ import mishcma.springframework.petclinic.services.PetService;
 import org.springframework.stereotype.Service;
 
 @Service
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
+public class OwnerMapService extends AbstractMapService<Owner, Long> implements OwnerService {
 
     private final PetTypeMapService petTypeMapService;
     private final PetService petService;
 
-    public OwnerServiceMap(
+    public OwnerMapService(
         PetTypeMapService petTypeMapService,
         PetService petService) {
         this.petTypeMapService = petTypeMapService;
