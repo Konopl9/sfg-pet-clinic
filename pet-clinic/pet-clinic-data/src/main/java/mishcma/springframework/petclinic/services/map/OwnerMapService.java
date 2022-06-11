@@ -5,9 +5,11 @@ import mishcma.springframework.petclinic.model.Owner;
 import mishcma.springframework.petclinic.model.Pet;
 import mishcma.springframework.petclinic.services.OwnerService;
 import mishcma.springframework.petclinic.services.PetService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 @Service
+@Profile({"default", "map"})
 public class OwnerMapService extends AbstractMapService<Owner, Long> implements OwnerService {
 
     private final PetTypeMapService petTypeMapService;

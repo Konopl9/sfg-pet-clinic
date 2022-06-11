@@ -3,9 +3,11 @@ package mishcma.springframework.petclinic.services.map;
 import java.util.Set;
 import mishcma.springframework.petclinic.model.Visit;
 import mishcma.springframework.petclinic.services.VisitService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 @Service
+@Profile({"default", "map"})
 public class VistMapService extends AbstractMapService<Visit, Long> implements VisitService {
 
     @Override
