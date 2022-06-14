@@ -65,7 +65,6 @@ class OwnerSDJpaServiceTest {
         Owner owner = service.findById(1L);
 
         assertNotNull(owner);
-        assertEquals(1L, owner.getId());
     }
 
     @Test
