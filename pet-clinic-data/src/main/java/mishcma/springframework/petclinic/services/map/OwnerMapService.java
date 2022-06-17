@@ -1,5 +1,6 @@
 package mishcma.springframework.petclinic.services.map;
 
+import java.util.List;
 import java.util.Set;
 import mishcma.springframework.petclinic.model.Owner;
 import mishcma.springframework.petclinic.model.Pet;
@@ -70,5 +71,11 @@ public class OwnerMapService extends AbstractMapService<Owner, Long> implements 
     @Override
     public Owner findByLastName(String lastName) {
         return this.findAll().stream().filter(owner -> owner.getLastName().equalsIgnoreCase(lastName)).findFirst().orElse(null);
+    }
+
+    @Override
+    public List<Owner> findAllByLastNameLike(String lastName) {
+        // todo - implement
+        return null;
     }
 }
